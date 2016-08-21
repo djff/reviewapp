@@ -5,13 +5,9 @@ from django.db import models
 from django.db import models
 from mongoengine import *
 
-class Login(Document):
-    username = StringField(max_length=20)
-    password = StringField(max_length=20)
-
 class Signup(Document):
     f_name = StringField(max_length=20)
     l_name = StringField(max_length=20)
-    date_of_birth = DateTimeField()
-    password = StringField(max_length=20)
-    email = EmailField()
+
+    def __str__(self):
+        return '{0} {1}'.format(self.f_name, self.l_name)

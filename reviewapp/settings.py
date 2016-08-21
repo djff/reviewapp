@@ -14,7 +14,7 @@ import os
 
 # connecting to mongodb
 from mongoengine import connect
-connect('reviewapp')
+connect('reviewdb')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
