@@ -1,10 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-it works perfectly
-</body>
-</html>
+{% extends 'reviewhome/base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <hr />
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-2">
+            <div class="form-group col-lg-offset-2 text-title">
+                Sign up to leave Reviews
+            </div>
+            <div class="form-group">
+                <button class="btn-primary form-control"><img src="{% static 'images/face.jpg' %}"
+                        class="face-adjust"> Sign Up with Facebook</button>
+            </div>
+            <div class="form-group inline-group">
+                <hr class="col-lg-4" />
+                <span class="col-lg-2 form-group"><h5>OR</h5></span>
+                <hr class="col-lg-4" />
+            </div>
+            <div class="row">
+                <div class="col-lg-6 form-group">
+                    <input type="text" class="col-lg-12 form-control" placeholder="First Name ...">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <input type="text" class="col-lg-12 form-control" placeholder="Last Name ...">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter Email ...">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password ...">
+            </div>
+             <div class="form-group">
+                <input type="password" class="form-control" placeholder="Retype Password ...">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Choose City">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Date Of Birth">
+            </div>
+            <div class="form-group policy">
+                By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+            </div>
+            <div class="form-group col-lg-offset-2 col-lg-6">
+                <button class="btn-danger form-control btn-style"> Sign Up </button>
+            </div>
+            <div class="form-group policy">
+                Already have an account? <a href="#">Login</a>.
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

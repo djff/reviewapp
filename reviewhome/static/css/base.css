@@ -2,6 +2,9 @@
     margin: 0;
     padding: 23px;
     background: #d32323;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .logo {
@@ -67,4 +70,107 @@ ul {
 }
 .btn-style:hover{
     border-color: black;
+}
+
+.text-title{
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.28571em;
+    color: #d32323;
+}
+
+.text-title div{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.face-adjust{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-right: 40px;
+}
+.city-menu span{
+    float: right;
+}
+
+.message{
+    border: 1px solid #e6e6e6;
+    height: 207px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.margin{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.margin div{
+    margin-left: 5px;
+}
+
+.margin2 {
+
+    width: 40%;
+    margin: auto;
+}
+
+.new-acc{
+    padding:12px 22px;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #CD2626;
+    text-decoration: none !important;
+    border-color: #8d0005;
+    border-radius: 3px;
+}
+
+.new-acc:hover{
+    background: linear-gradient(#d90007, #c91400);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.category-box{
+    margin-top: 80px;
+}
+
+.category-box span{
+    float: left;
+}
+
+.category-menu{
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none !important;
+}
+
+.category-menu li{
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #e5e5e5;
+    color: #666;
+    background: ghostwhite;
+    margin-left: -40px;
+}
+
+.li-hover:hover{
+    background: #e5e5e5;
+}
+
+.category-menu li a{
+    display: block;
+    padding: 12px 10px 5px;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid #e6e6e6;
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-menu li a span{
+    margin-right: 10px;
 }

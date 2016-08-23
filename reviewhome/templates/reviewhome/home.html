@@ -1,0 +1,105 @@
+{% extends 'reviewhome/base.html' %}
+{% load staticfiles %}
+
+{% block style %}
+    .message {
+        background-image: url({% static 'images/message-bg.png' %});
+    }
+{% endblock %}
+
+{% block cities %}
+    <div class="col-lg-10 col-lg-offset-1 city-menu">
+        <span>
+            <a href="">South-West</a> |
+            <a href="">Littoral</a> |
+            <a href="">Center</a> |
+            <a href="">West</a> |
+            <a href="">Far-Nord</a> |
+            <a href="">Adamawa</a> |
+            <a href="">South</a> |
+            <a href="">East</a> |
+            <a href="">Nord</a> |
+            <a href="">North-West</a> |
+        </span>
+        <hr />
+
+        <div class="col-lg-12 container">
+            <div class="col-lg-7 message">
+                <div class="text-title ">
+                    <div>
+                        ReviewApp, Find great local businesses in Cameroon
+                    </div>
+                </div>
+                <div class="margin">
+                    People use ReviewApp to search all local businesses/services in cameroon, Read user review
+                    <div>and make their
+                    choice. All buisiness from small to most renowned are found on our platform
+                    </div>
+                </div>
+                <div class="margin2">
+                    <a href="{% url 'reviewhome.views.signup' %}" class="new-acc">Create A Free account</a>
+                </div>
+                <div class="category-box row">
+                    <span class="text-title">
+                        Businesses / Services : {{ Region }}
+                    </span>
+                    <div class="col-lg-12 row">
+                        <div class="col-lg-5 row">
+                            <ol class="category-menu">
+                                <li class="li-hover">
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-education"></span>
+                                            Education
+                                    </a>
+                                </li>
+                                <li class="li-hover">
+                                    <a href="">
+                                            <span class="glyphicon glyphicon-usd"></span>
+                                            Banking
+                                    </a>
+                                </li>
+                                <li class="li-hover">
+                                    <a href="">
+                                            <span class="glyphicon glyphicon-cutlery"></span>
+                                            Restaurants
+                                    </a>
+                                </li>
+                                <li class="li-hover">
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-btc"></span>
+                                            Bakery
+                                    </a>
+                                </li>
+                                <li class="li-hover">
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                            Health & Medicals
+                                    </a>
+                                </li>
+                                <li class="li-hover">
+                                    <a href="">
+                                        <span class="glyphicon glyphicon-wrench"></span>
+                                            Home Service
+                                    </a>
+                                </li>
+                                <li class="li-hover">
+                                    <a href="">
+                                            Home Service
+                                    </a>
+                                </li>
+
+                            </ol>
+                        </div>
+                        <div class="col-lg-7 top-biz">
+                            this is me
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}

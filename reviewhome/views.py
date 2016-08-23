@@ -9,4 +9,4 @@ def signup(request):
     return render(request, 'reviewhome/signup.html', {})
 
 def index(request):
-    return render(request, 'reviewhome/base.html', {})
+    return render(request, 'reviewhome/home.html', {})

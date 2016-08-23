@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Review Camer</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -12,14 +13,16 @@
         .div-image{
                 background-image: url({% static 'images/hearderimage.png' %});
         }
+        {% block style %}
+        {% endblock %}
     </style>
 </head>
 <body>
-    <div class="page-header div-image">
+    <div class="page-header div-image container">
         <div class="arrange-header">
             <div class="row">
                 <div class="col-md-2">
-                    <img src={% static 'images/logo.png'%} class='logo'>
+                   <a href="{% url 'reviewhome.views.index' %}"> <img src={% static 'images/logo.png'%} class='logo'></a>
                 </div>
                 <div class="col-md-8">
                     <div class=" col-md-5 form-control field-search ">
@@ -38,7 +41,7 @@
                                 <a class="a-menu" href="/">Home</a>
                             </li>
                             <li class="menu-list">
-                                <a class="a-menu" href="">About Us</a>
+                                <a class="a-menu" href="{% url "reviewhome.views.signup" %}">About Us</a>
                             </li>
                             <li class="menu-list">
                                 <a class="a-menu" href="">Write a Review</a>
@@ -76,8 +79,11 @@
         </div>
 
     </div>
+    {% block cities %}
+    {% endblock %}
 
     {% block content %}
     {% endblock %}
+
 </body>
 </html>
