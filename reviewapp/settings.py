@@ -14,14 +14,14 @@ import os
 
 # connecting to mongodb
 ON_HEROKU = os.environ.get('ON_HEROKU')
-if ON_HEROKU:
-    import dj_database_url
-
-    DATABASE_URL = 'postgresql:///postgresql'
-    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
-else:
-    from mongoengine import connect
-    connect('reviewdb')
+# if ON_HEROKU:
+#     import dj_database_url
+#
+#     DATABASE_URL = 'postgresql:///postgresql'
+#     DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+# else:
+from mongoengine import connect
+connect('reviewdb')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
