@@ -10,4 +10,4 @@ class Signup(Document):
     l_name = StringField(max_length=20)
 
     def __str__(self):
-        return '{0} {1}'.format(self.f_name, self.l_name)git s
+        return '{0} {1}'.format(self.f_name, self.l_name)
